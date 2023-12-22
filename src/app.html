@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div class="py-4 h-screen grid grid-cols-4 gap-4">
+			<div class="menu flex items-center h-100 col-span-1">
+				<ul class="menu h-100 bg-base-200 w-56 rounded-box">
+					<li><a href="/">Home</a></li>
+					<li><a href="/teachers">Teachers</a></li>
+					<li><a href="/coaches">Coaches</a></li>
+					<li><a href="/students">Students</a></li>
+					<li><a href="/resource_management">Resource Management</a></li>
+				</ul>
+			</div>
+			<div class="content col-span-3">
+				<div class="font-extrabold text-6xl text-center mb-8">Educational Dashboard</div>
+				<div style="display: contents">%sveltekit.body%</div>
+			</div>
+		</div>
+	</body>
+</html>
