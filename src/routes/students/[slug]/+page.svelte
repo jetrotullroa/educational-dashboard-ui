@@ -12,7 +12,7 @@
 
 <div>
   <h3 class="font-semibold text-2xl mb-4">
-    Student {studentProgress[0].name} Progress
+    Student {studentProgress[0].student.name} Progress
   </h3>
   <div>
     <div class="card bg-teal-400 shadow-xl col-span-1 mb-4">
